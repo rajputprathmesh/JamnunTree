@@ -107,7 +107,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-6"
         >
-          Experience Fine Dining Like <br className="hidden md:block" /> Never Before in Aurangabad
+          Experience Fine Dining Like <br className="hidden md:block" /> Never Before in Chh.Sambhajinagar
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -149,7 +149,7 @@ const SocialProof = () => {
         </div>
         <div className="hidden md:block w-px h-8 bg-white/20"></div>
         <p className="text-cream-100 uppercase tracking-widest text-sm font-medium text-center">
-          Loved by 80+ diners in Aurangabad
+          Loved by 80+ diners in Chh.Sambhajinagar
         </p>
         <div className="hidden md:block w-px h-8 bg-white/20"></div>
         <div className="flex items-center gap-3">
@@ -177,7 +177,7 @@ const About = () => {
               A Culinary Journey <br/> Rooted in Tradition
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Jaamun Tree is not just a restaurant — it’s an experience. Nestled in Garkheda, Aurangabad, we bring together the rich heritage of Indian spices with modern culinary techniques to create pure vegetarian dishes that delight the senses.
+              Jaamun Tree is not just a restaurant — it’s an experience. Nestled in Garkheda, Chh.Sambhajinagar, we bring together the rich heritage of Indian spices with modern culinary techniques to create pure vegetarian dishes that delight the senses.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Whether you're planning a romantic date night, a joyful family weekend dinner, or a celebration with friends, our aesthetic ambience and premium service ensure every moment is memorable.
