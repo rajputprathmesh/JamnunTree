@@ -343,12 +343,12 @@ const WhyChooseUs = () => {
 
 const Gallery = () => {
   const images = [
-    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop"
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-xnhbvf7ub5.jpg?imwidth=463.3333333333333",
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-czw5v5zj30.jpg?imwidth=463.3333333333333",
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-xnhbvf7ub5.jpg?imwidth=463.3333333333333",
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-wbwszfoylt.jpg?imwidth=463.3333333333333",
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-ba6dsqalkm.jpg?imwidth=463.3333333333333",
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-xghkdz05g8.jpg?imwidth=463.3333333333333"
   ];
 
   return (
