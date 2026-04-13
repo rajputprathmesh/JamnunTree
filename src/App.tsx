@@ -1,3 +1,4 @@
+import SocialIcons from "./SocialIcons";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
@@ -708,6 +709,7 @@ const ExitIntentPopup = () => {
 export default function App() {
   return (
     <div className="min-h-screen font-sans text-jamun-900 selection:bg-gold-500 selection:text-jamun-900">
+      <SocialIcons />
       <Navbar />
       <Hero />
       <SocialProof />
