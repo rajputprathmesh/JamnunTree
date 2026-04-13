@@ -208,13 +208,13 @@ const About = () => {
           >
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" 
+                src="https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-xnhbvf7ub5.jpg?imwidth=463.3333333333333" 
                 alt="Restaurant Interior" 
                 className="rounded-t-full w-full h-80 object-cover mt-12 shadow-xl"
                 referrerPolicy="no-referrer"
               />
               <img 
-                src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=800&auto=format&fit=crop" 
+                src="https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-eh2esogyey.jpg?imwidth=463.3333333333333" 
                 alt="Signature Dish" 
                 className="rounded-b-full w-full h-80 object-cover shadow-xl"
                 referrerPolicy="no-referrer"
@@ -237,10 +237,10 @@ const SignatureMenu = () => {
 
   const menuItems = [
     { name: "Truffle Mushroom Galouti", desc: "Melt-in-mouth mushroom kebabs with truffle oil", price: "₹450", cat: "Starters", img: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=400&auto=format&fit=crop" },
-    { name: "Jaamun Tree Special Paneer", desc: "Cottage cheese in our signature rich purple gravy", price: "₹550", cat: "Main Course", img: "https://images.unsplash.com/photo-1631452180519-c014fe946bc0?q=80&w=400&auto=format&fit=crop" },
+    { name: "Jaamun Tree Special Paneer", desc: "Cottage cheese in our signature rich purple gravy", price: "₹550", cat: "Main Course", img: "https://img.freepik.com/premium-photo/shahi-paneer-dish-poster-with-creamy-gravy-paneer-cubes-illustration-food-drink-indian-flavors_1142283-97080.jpg?ga=GA1.1.693766657.1776101422&semt=ais_hybrid&w=740&q=80" },
     { name: "Smoked Dal Makhani", desc: "Slow-cooked black lentils finished with fresh cream", price: "₹400", cat: "Main Course", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=400&auto=format&fit=crop" },
     { name: "Awadhi Dum Biryani", desc: "Fragrant basmati rice cooked with exotic spices", price: "₹650", cat: "Main Course", img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=400&auto=format&fit=crop" },
-    { name: "Saffron Pistachio Kulfi", desc: "Traditional Indian ice cream with nuts and saffron", price: "₹250", cat: "Desserts", img: "https://images.unsplash.com/photo-1563805042-7684c8a9e9cb?q=80&w=400&auto=format&fit=crop" },
+    { name: "Saffron Pistachio Kulfi", desc: "Traditional Indian ice cream with nuts and saffron", price: "₹250", cat: "Desserts", img: "https://img.freepik.com/premium-photo/rajwari-rajwadi-sweet-kesar-badam-pista-kulfi-ice-cream-candy_466689-15797.jpg?ga=GA1.1.693766657.1776101422&semt=ais_hybrid&w=740&q=80" },
     { name: "Jamun Mocktail", desc: "Refreshing blend of fresh jamun, mint, and lime", price: "₹220", cat: "Beverages", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=400&auto=format&fit=crop" },
   ];
 
