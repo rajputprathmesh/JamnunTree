@@ -546,65 +546,6 @@ const FloatingWhatsApp = () => {
   );
 };
 
-const ExitIntentPopup = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [hasShown, setHasShown] = useState(false);
-
-  useEffect(() => {
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !hasShown) {
-        setIsOpen(true);
-        setHasShown(true);
-      }
-    };
-
-    document.addEventListener('mouseleave', handleMouseLeave);
-    return () => document.removeEventListener('mouseleave', handleMouseLeave);
-  }, [hasShown]);
-
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-jamun-900/80 backdrop-blur-sm">
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="bg-white rounded-2xl p-8 max-w-md w-full relative shadow-2xl text-center"
-      >
-        <button 
-          onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 text-gray-400 hover:text-jamun-900"
-        >
-          <X size={24} />
-        </button>
-        
-        <div className="w-16 h-16 bg-gold-100 text-gold-600 rounded-full flex items-center justify-center mx-auto mb-6">
-          <Star size={32} fill="currentColor" />
-        </div>
-        
-        <h2 className="text-3xl font-serif text-jamun-900 mb-2">Wait! Don't Leave Yet</h2>
-        <p className="text-gray-600 mb-6">
-          Get <span className="font-bold text-jamun-900">10% off</span> on your first visit. Explore our menu and experience fine dining at its best.
-          </p>
-
-        <a 
-          href="#menu" 
-          onClick={() => setIsOpen(false)}
-          className="block w-full bg-gold-500 hover:bg-gold-400 text-jamun-900 py-4 rounded-full font-medium uppercase tracking-wider transition-colors mb-3"
-        >
-          Explore Menu
-        </a>
-        <button 
-          onClick={() => setIsOpen(false)}
-          className="text-sm text-gray-500 hover:text-jamun-900 underline"
-        >
-          No thanks, I'll pass
-        </button>
-      </motion.div>
-    </div>
-  );
-};
-
 export default function App() {
   return (
     <div className="min-h-screen font-sans text-jamun-900 selection:bg-gold-500 selection:text-jamun-900">
@@ -619,7 +560,6 @@ export default function App() {
       <Contact />
       <Footer />
       <FloatingWhatsApp />
-      <ExitIntentPopup />
     </div>
   );
 }
