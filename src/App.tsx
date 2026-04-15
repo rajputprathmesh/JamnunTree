@@ -1,11 +1,10 @@
-import SocialIcons from "./SocialIcons";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Menu, X, MapPin, Phone, Clock, Star, 
   ChefHat, Utensils, GlassWater, Coffee, 
   Calendar, Users, MessageCircle, ChevronRight,
-  Instagram, Facebook, Twitter, CheckCircle2
+  Instagram, CheckCircle2
 } from 'lucide-react';
 
 // --- Components ---
@@ -38,9 +37,6 @@ const Navbar = () => {
             <a href="#menu" className="text-white hover:text-gold-400 transition-colors text-sm uppercase tracking-widest">Menu</a>
             <a href="#gallery" className="text-white hover:text-gold-400 transition-colors text-sm uppercase tracking-widest">Gallery</a>
             <a href="#contact" className="text-white hover:text-gold-400 transition-colors text-sm uppercase tracking-widest">Contact</a>
-            <a href="#reservation" className="bg-gold-500 hover:bg-gold-400 text-jamun-900 px-6 py-2 rounded-full font-medium transition-colors uppercase tracking-wider text-sm">
-              Reserve a Table
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -66,9 +62,6 @@ const Navbar = () => {
               <a href="#menu" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 text-base uppercase tracking-widest">Menu</a>
               <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 text-base uppercase tracking-widest">Gallery</a>
               <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 text-base uppercase tracking-widest">Contact</a>
-              <a href="#reservation" onClick={() => setIsMobileMenuOpen(false)} className="bg-gold-500 text-jamun-900 block px-3 py-3 rounded-md text-center font-medium uppercase tracking-wider mt-4">
-                Reserve a Table
-              </a>
             </div>
           </motion.div>
         )}
@@ -124,10 +117,6 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a href="#reservation" className="w-full sm:w-auto bg-gold-500 hover:bg-gold-400 text-jamun-900 px-8 py-4 rounded-full font-medium transition-all uppercase tracking-wider text-sm flex items-center justify-center group">
-            Reserve a Table
-            <ChevronRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </a>
           <a href="#menu" className="w-full sm:w-auto bg-transparent border border-white/30 hover:border-white text-white px-8 py-4 rounded-full font-medium transition-all uppercase tracking-wider text-sm">
             View Menu
           </a>
@@ -194,7 +183,7 @@ const About = () => {
               </div>
             </div>
 
-            <a href="#reservation" className="inline-flex items-center text-jamun-800 font-medium uppercase tracking-wider hover:text-gold-600 transition-colors">
+            <a href="#menu" className="inline-flex items-center text-jamun-800 font-medium uppercase tracking-wider hover:text-gold-600 transition-colors">
               Discover More <ChevronRight size={16} className="ml-1" />
             </a>
           </motion.div>
@@ -426,97 +415,6 @@ const Testimonials = () => {
   );
 };
 
-const Reservation = () => {
-  return (
-    <section id="reservation" className="py-24 bg-jamun-900 relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-          <path fill="#D4AF37" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,97.4,-2.3C98,13.4,93.2,29.3,84.2,42.7C75.2,56.1,62,67,47.4,74.5C32.8,82,16.4,86.1,0.5,85.2C-15.4,84.3,-30.8,78.4,-44.6,70.3C-58.4,62.2,-70.6,51.9,-78.9,39.1C-87.2,26.3,-91.6,11,-90.6,-3.8C-89.6,-18.6,-83.2,-32.9,-73.9,-44.6C-64.6,-56.3,-52.4,-65.4,-39.3,-73.1C-26.2,-80.8,-13.1,-87.1,1.1,-88.9C15.3,-90.7,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
-        </svg>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h4 className="text-gold-500 font-serif italic text-xl mb-2">Book a Table</h4>
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
-              Reserve Your <br/> Premium Experience
-            </h2>
-            <p className="text-cream-100/80 mb-8 max-w-md">
-              Join us for an unforgettable dining experience. We recommend booking in advance, especially for weekends and special occasions.
-            </p>
-            
-            <div className="bg-jamun-800/50 border border-gold-500/30 p-4 rounded-lg inline-flex items-center gap-3 mb-8">
-              <Clock className="text-gold-500" size={24} />
-              <div>
-                <p className="text-white text-sm font-medium">Limited seats available on weekends</p>
-                <p className="text-cream-100/60 text-xs">Book early to secure your spot</p>
-              </div>
-            </div>
-          </div>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="bg-white p-8 md:p-10 rounded-2xl shadow-2xl"
-          >
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                  <input type="text" className="w-full border-b-2 border-gray-200 focus:border-gold-500 py-2 outline-none transition-colors bg-transparent" placeholder="John Doe" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                  <input type="tel" className="w-full border-b-2 border-gray-200 focus:border-gold-500 py-2 outline-none transition-colors bg-transparent" placeholder="+91 98765 43210" />
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Date</label>
-                  <div className="relative">
-                    <input type="date" className="w-full border-b-2 border-gray-200 focus:border-gold-500 py-2 outline-none transition-colors bg-transparent" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Time</label>
-                  <select className="w-full border-b-2 border-gray-200 focus:border-gold-500 py-2 outline-none transition-colors bg-transparent">
-                    <option>19:00</option>
-                    <option>19:30</option>
-                    <option>20:00</option>
-                    <option>20:30</option>
-                    <option>21:00</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Number of Guests</label>
-                <select className="w-full border-b-2 border-gray-200 focus:border-gold-500 py-2 outline-none transition-colors bg-transparent">
-                  <option>2 People</option>
-                  <option>3 People</option>
-                  <option>4 People</option>
-                  <option>5+ People</option>
-                </select>
-              </div>
-
-              <div className="pt-4">
-                <button type="submit" className="w-full bg-jamun-900 hover:bg-jamun-800 text-white py-4 rounded-full font-medium uppercase tracking-wider transition-colors">
-                  Book Your Table Now
-                </button>
-              </div>
-            </form>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-cream-50">
@@ -533,7 +431,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-serif text-xl text-jamun-900 mb-1">Address</h4>
-                  <p className="text-gray-600">Garkheda<br/>Aurangabad, Maharashtra</p>
+                  <p className="text-gray-600">Garkheda<br/>Chh.Sambhajinagar, Maharashtra</p>
                 </div>
               </div>
               
@@ -591,15 +489,14 @@ const Footer = () => {
               Jaamun Tree is not just a restaurant — it’s an experience. Discover the finest dining in Aurangabad, where every meal is a celebration.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-jamun-900 transition-colors">
+             <a 
+              href="https://www.instagram.com/jaamuntree/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-jamun-900 transition-colors"
+              >
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-jamun-900 transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold-500 hover:text-jamun-900 transition-colors">
-                <Twitter size={20} />
-              </a>
+                </a>
             </div>
           </div>
           
@@ -616,7 +513,7 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg mb-4 uppercase tracking-widest">Contact</h4>
             <ul className="space-y-2 text-cream-100/70">
-              <li>Garkheda, Aurangabad, Maharashtra</li>
+              <li>Garkheda, Chh.Sambhajinagar, Maharashtra</li>
               <li>+91 91752 12341</li>
               <li>info@jaamuntree.com</li>
             </ul>
@@ -686,14 +583,16 @@ const ExitIntentPopup = () => {
         </div>
         
         <h2 className="text-3xl font-serif text-jamun-900 mb-2">Wait! Don't Leave Yet</h2>
-        <p className="text-gray-600 mb-6">Get <span className="font-bold text-jamun-900">10% off</span> on your first visit. Book your table now and experience fine dining at its best.</p>
-        
+        <p className="text-gray-600 mb-6">
+          Get <span className="font-bold text-jamun-900">10% off</span> on your first visit. Explore our menu and experience fine dining at its best.
+          </p>
+
         <a 
-          href="#reservation" 
+          href="#menu" 
           onClick={() => setIsOpen(false)}
           className="block w-full bg-gold-500 hover:bg-gold-400 text-jamun-900 py-4 rounded-full font-medium uppercase tracking-wider transition-colors mb-3"
         >
-          Claim Offer & Book Now
+          Explore Menu
         </a>
         <button 
           onClick={() => setIsOpen(false)}
@@ -709,7 +608,6 @@ const ExitIntentPopup = () => {
 export default function App() {
   return (
     <div className="min-h-screen font-sans text-jamun-900 selection:bg-gold-500 selection:text-jamun-900">
-      <SocialIcons />
       <Navbar />
       <Hero />
       <SocialProof />
@@ -718,7 +616,6 @@ export default function App() {
       <WhyChooseUs />
       <Gallery />
       <Testimonials />
-      <Reservation />
       <Contact />
       <Footer />
       <FloatingWhatsApp />
