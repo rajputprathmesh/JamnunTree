@@ -197,13 +197,13 @@ const About = () => {
           >
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-xnhbvf7ub5.jpg?imwidth=463.3333333333333" 
+                src="https://instagram.fnag10-1.fna.fbcdn.net/v/t51.82787-15/613761151_17995860656888909_8474304878056921707_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzgwNzU1NDI4MzkxMTMwOTAxMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=5Wh1Wj0hga8Q7kNvwE9WE6p&_nc_oc=AdqLCfVNQ9zFGRPiPe35hjBS4mtju8AN466jOd48hPojTQ6AtwJklWrv2Qf0qL_8whyhq-eUAWRK56E3SAL6TFjB&_nc_ad=z-m&_nc_cid=1252&_nc_zt=23&_nc_ht=instagram.fnag10-1.fna&_nc_gid=WqrgYHymz_KpfuZW3Vk43w&_nc_ss=7a32e&oh=00_Af07uf-SpbssXqQpLnOCmHeQr9wffFQtSw8iYkh1USJvRA&oe=69E6D9B3" 
                 alt="Restaurant Interior" 
                 className="rounded-t-full w-full h-80 object-cover mt-12 shadow-xl"
                 referrerPolicy="no-referrer"
               />
               <img 
-                src="https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-eh2esogyey.jpg?imwidth=463.3333333333333" 
+                src="https://instagram.fnag10-1.fna.fbcdn.net/v/t51.82787-15/613565429_17930328930175617_5355998342106222928_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzgwNjMwOTQxNzc5Nzk1NTYxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=fpHmd6h4nfMQ7kNvwH8fg6L&_nc_oc=AdqOnfuwwPnfOZk7mEK8QafirrN2Kcf-JPMKGadpdpAp9bdggt1W9P265Pw71Shh_RLjxladZ6W9oYlZ3nvp6WCp&_nc_ad=z-m&_nc_cid=1252&_nc_zt=23&_nc_ht=instagram.fnag10-1.fna&_nc_gid=ldNesvORlGfm401PITvSew&_nc_ss=7a32e&oh=00_Af3onOYgdzIxFQlUMkpOVPsgKlLpAI7fUiDxF8QzX9vY1Q&oe=69E6CB8E"
                 alt="Signature Dish" 
                 className="rounded-b-full w-full h-80 object-cover shadow-xl"
                 referrerPolicy="no-referrer"
