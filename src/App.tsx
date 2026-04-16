@@ -335,7 +335,7 @@ const Gallery = () => {
   const images = [
     "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-xnhbvf7ub5.jpg?imwidth=463.3333333333333",
     "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-czw5v5zj30.jpg?imwidth=463.3333333333333",
-    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-osmanpura-aurangabad-maharashtra-pure-veg-restaurants-xnhbvf7ub5.jpg?imwidth=463.3333333333333",
+    "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/w8/9999px240.x240.250924032625.w3w8/catalogue/jaamun-tree-garkheda-aurangabad-maharashtra-pure-veg-restaurants-fvbmcz8z9i.jpg?imwidth=463.3333333333333",
     "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-wbwszfoylt.jpg?imwidth=463.3333333333333",
     "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-ba6dsqalkm.jpg?imwidth=463.3333333333333",
     "https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/z7/9999px240.x240.240425183404.q3z7/catalogue/jaamun-tree-sneha-nagar-sillod-pure-veg-restaurants-xghkdz05g8.jpg?imwidth=463.3333333333333"
